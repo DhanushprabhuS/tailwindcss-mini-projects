@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+
+<body>
+    <!--Golbal-->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+        <!--Card box-->
+        <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+            <!--Menu-->
+            <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+                <!--Menu items-->
+                <div class="group">
+                    <a href="#">Vector</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">Illustrations</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">Images</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#">Icons</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+                    </div>
+                </div>
+            </div>
+            <!--Search box-->
+            <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+                <!--Input SVG cont-->
+                <div class="flex justify-between border-b">
+                    <input type="text" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" placeholder="Search" />
+                    <button>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!--Upload btn-->
+                <button class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black">
+                    Upload
+                </button>
+            </div>
+
+            <!--Gallery container-->
+            <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                <!--Img 1-->
+                <div class="relative group">
+                    <img src="images/image1.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-xs">245 likes - 38 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 2-->
+                <div class="relative group">
+                    <img src="images/image2.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Old Mansion</p>
+                                <p class="text-xs">207 likes - 38 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 3-->
+                <div class="relative group">
+                    <img src="images/image3.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Sloar Roof</p>
+                                <p class="text-xs">145 likes - 8 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 4-->
+                <div class="relative group">
+                    <img src="images/image4.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Space Painting</p>
+                                <p class="text-xs">585 likes - 102 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 5-->
+                <div class="relative group">
+                    <img src="images/image5.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Apartments City</p>
+                                <p class="text-xs">375 likes - 78 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 6-->
+                <div class="relative group">
+                    <img src="images/image6.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">The Door</p>
+                                <p class="text-xs">445 likes - 138 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Img 7-->
+                <div class="relative group">
+                    <img src="https://t3.ftcdn.net/jpg/02/73/22/74/360_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">The Eyes</p>
+                                <p class="text-xs">435 likes - 198 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/bookmark.svg" alt="bookmark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

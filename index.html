@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projects TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Mulish', 'sans-serif'],
+                    mono: ['Rokkitt', 'monospace'],
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-slate-600">
+
+        <div class="relative flex flex-col space-y-6 p-6 bg-white rounded-xl shadow-2xl">
+            <h1 class="text-xl font-bold">Welcome to my TailwindCSS Mini Projects Showcase!</h1>
+            <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4 items-center p-5 mb-5">
+
+                <div class="group w-40 border p-3 border-2 rounded-md border-slate-600 hover:-translate-y-2 transition duration-350">
+                    <a href="/email-card/" class="text-md text-slate-800 font-medium group-hover:tracking-wider transition duration-250">Email sign up card</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-slate-600 hidden group-hover:block group-hover:opacity-100 transition duration-250"></div>
+                </div>
+
+                <div class="group w-40 border p-3 border-2 rounded-md border-slate-600 hover:-translate-y-2 transition duration-350">
+                    <a href="/pricing-cards/" class="text-md text-slate-800 font-medium group-hover:tracking-wider transition duration-250">Pricing card</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-slate-600 group-hover:opacity-100 transition duration-250"></div>
+                </div>
+                <div class="group w-40 border p-3 border-2 rounded-md border-slate-600 hover:-translate-y-2 transition duration-350">
+                    <a href="/product-modal/" class="text-md text-slate-800 font-medium group-hover:tracking-wider transition duration-250">Product modal</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-slate-600 group-hover:opacity-100 transition duration-250"></div>
+                </div>
+
+
+                <div class="group w-40 border p-3 border-2 rounded-md border-slate-600 hover:-translate-y-2 transition duration-350">
+                    <a href="/login-modal/" class="text-md text-slate-800 font-medium group-hover:tracking-wider transition duration-250">Log in modal</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-slate-600 group-hover:opacity-100 transition duration-250"></div>
+                </div>
+
+                <div class="group w-40 border p-3 border-2 rounded-md border-slate-600 hover:-translate-y-2 transition duration-350">
+                    <a href="/image-gallery/" class="text-md text-slate-800 font-medium group-hover:tracking-wider transition duration-250">Image gallery</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-slate-600 group-hover:opacity-100 transition duration-250"></div>
+                </div>
+                <p class="absolute bottom-2 left-3 text-sm font-extralight text-gray-500 mt-3">Clik on the above links to view live demo</p>
+            </div>
+        </div>
+        <div class="absolute bottom-2 right-3 flex flex-row items-center justify-center space-x-4 md:space-x-8">
+            <a class="text-sm font-extralight text-gray-200 mt-3" href="https://github.com/DhanushPrabhuS">Github</a>
+            <a class="text-sm font-extralight text-gray-200 mt-3" href="https://www.linkedin.com/in/dhanushpraslate-600">Linkedin</a>
+            <a class="text-sm font-extralight text-gray-200 mt-3" href="https://leetcode.com/Dhanushprabhus/">Leetcode</a>
+            <a class="text-sm font-extralight text-gray-200 mt-3" href="mailto:dhanushprabhusenthil@gmail.com">Gmail</a>
+        </div>
+
+
+</body>
+
+</html>
